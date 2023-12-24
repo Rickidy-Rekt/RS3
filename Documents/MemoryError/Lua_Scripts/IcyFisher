@@ -1,0 +1,39 @@
+print("Run Icy Fisher")
+
+local API = require("api")
+
+local fishingSpot = 
+local depositBarrel =
+
+
+local function fish()
+    local failCount = 0
+    --API.DoActionObject1()
+    API.WaitUntilMovingandAnimEnds()
+
+    while not API.InvFull_()
+        API.RandomSleep2(2000,2000,2000)
+    end
+end
+
+local function depositFish()
+    --API.DoActionObject1
+    API.WaitUntilMovingandAnimEnds()
+end
+
+
+--Exported function list is in API
+--main loop
+while(API.Read_LoopyLoop())
+do-----------------------------------------------------------------------------------
+
+if API.Invfreecount_() > 0 then
+    fish()
+else
+    depositFish()
+end
+
+
+
+API.RandomSleep2(2500, 3050, 12000)
+end----------------------------------------------------------------------------------
