@@ -6,6 +6,8 @@ print("Running Ricks MiasmaRC.")
 -- I put Tome of Um 2 on last slot in ability bar 2, passing bracelet to the left slot, and eth gloves to the left of that slot. 
 --My surge is on ab bar 5 in the far right slot, however I believe there is an activate_surge() in API you can substitute for my surge() function.
 
+--Wouldn't use this until I change equip bracelet to just use it from inventory. 
+
 --[[
 Stuff to maybe (probably not) be implemented in future
 
