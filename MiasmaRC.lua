@@ -57,11 +57,6 @@ local function interactDarkPortal()
     API.WaitUntilMovingandAnimEnds()
 end
 
-local function walkTowardsMiasmaAltar()
-    print("Walk toward Altar")
-    API.DoAction_Tile(WPOINT.new(1324, 1952, 0))
-end
-
 local function surge()
     print("Surge")
     API.DoAction_Interface(0x2e, 0xffffffff, 1, 1430, 194, -1, 3808)
@@ -104,8 +99,8 @@ while API.Read_LoopyLoop() do
         equipEthGloves()
         -- Click Dark Portal
         interactDarkPortal()
-        walkTowardsMiasmaAltar()
         -- Surge
+        craftRunes()
         surge()
         -- Craft Runes
         craftRunes()
